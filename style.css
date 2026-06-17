@@ -66,3 +66,20 @@ ul li.checked {
 ul li.checked::before {
     background-image: url(https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_1280.png);
 }
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px; 
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: #edeef0;
+}
