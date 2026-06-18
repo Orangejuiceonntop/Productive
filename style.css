@@ -6,7 +6,6 @@
     padding: 40px 15px 65px;
     border-radius: 10px;
 }
-
 .row {
     display: flex;
     align-items: center;
@@ -16,7 +15,6 @@
     padding-left: 20px;
     margin-bottom: 25px;
 }
-
 input {
     flex: 1;
     border: none;
@@ -24,7 +22,6 @@ input {
     background: transparent;
     padding: 10px;
 }
-
 button {
     border: none;
     outline: none;
@@ -35,7 +32,6 @@ button {
     cursor: pointer;
     border-radius: 40px;
 }
-
 ul li {
     list-style: none;
     font-size: 17px;
@@ -44,7 +40,6 @@ ul li {
     cursor: pointer;
     position: relative;
 }
-
 ul li::before {
     content: '';
     position: absolute;
@@ -57,16 +52,13 @@ ul li::before {
     top: 12px;
     left: 8px;
 }
-
 ul li.checked {
     color: #555;
     text-decoration: line-through;
 }
-
 ul li.checked::before {
     background-image: url(https://cdn.pixabay.com/photo/2017/01/13/01/22/ok-1976099_1280.png);
 }
-
 ul li span {
     position: absolute;
     right: 0;
@@ -79,63 +71,54 @@ ul li span {
     text-align: center;
     border-radius: 50%;
 }
-
 ul li span:hover {
     background: #edeef0;
 }
 
 .quote-box {
     background: #ffffff;
-    width: 700px;
+    width: 350px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     padding: 40px;
     border-radius: 10px;
     text-align: center;
 }
-
 .quote-box h2 {
-    font-size: 32px;
     margin-bottom: 40px;
     position: relative;
 }
-
 .quote-box h2::after {
     content: '';
     width: 75px;
     height: 3px;
     border-radius: 3px;
-    background: rgb(23,124,229);
+    background: rgb(0,0,0);
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%)
 }
-
 .quote-box blockquote {
-    font-size: 26px;
-    min-height: 110px;
+    font-size: 20px;
+    min-height: 80px;
 
 }
-
 .quote-box blockquote::before, .quote-box blockquote::after {
     content: '"'
 }
-
 .quote-box span {
     display: block;
-    margin-top: 10px;
+    margin-top: 5px;
     float: right;
     position: relative;
 }
-
 .quote-box span::before {
     content: '';
     width: 20px;
     height: 2px;
-    background: rgb(23,124,229);
+    background: #000000;
     position: absolute;
     top: 50%;
     left: -30px;
