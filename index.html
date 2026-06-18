@@ -5,7 +5,7 @@
             <h2 style="display: flex; justify-content: center;">To-Do List</h2>
             <div class="row">
                 <input type="text" id="input-box" placeholder="goals, activities, etc">
-                <button onclick="addTask()">Add</button>
+                <button class="tdbutton" onclick="addTask()">Add</button>
             </div>
             <ul id="list-container">
                <!-- <li class="checked">Task 1</li>
@@ -13,11 +13,24 @@
                 <li>Task 3</li> -->
             </ul>
         </div>
-
         <div class="quote-box">
             <h2>Quote</h2>
             <blockquote id="quote">Loading...</blockquote>
             <span id="author">Loading...</span>
+        </div>
+
+        <div class="pomodoro">
+            <div class="mode">
+                <button class="focus">Focus</button>
+                <button class="short">Short break</button>
+                <button class="long">Long break</button>
+            </div>
+            <div class="timer">25:00</div>
+            <div class="buttons">
+                <button class="start">Start</button>
+                <button class="pause">Pause</button>
+                <button class="reset">Reset</button>
+            </div>
         </div>
 
         
