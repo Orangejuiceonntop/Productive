@@ -83,3 +83,60 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+
+.quote-box {
+    background: #ffffff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.quote-box h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.quote-box h2::after {
+    content: '';
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgb(23,124,229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.quote-box blockquote {
+    font-size: 26px;
+    min-height: 110px;
+
+}
+
+.quote-box blockquote::before, .quote-box blockquote::after {
+    content: '"'
+}
+
+.quote-box span {
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.quote-box span::before {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
