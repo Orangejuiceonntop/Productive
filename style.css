@@ -1,3 +1,8 @@
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #D1E5F4;
+}
+
 .todo {
     width: 100%;
     max-width: 540px;
