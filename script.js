@@ -56,3 +56,36 @@ async function getquote(url) {
 }
 
 getquote(api_url)
+
+let start = document.querySelector(".pomodoro .buttons .start");
+let pause = document.querySelector(".pomodoro .buttons .pause");
+let reset = document.querySelector(".pomodoro .buttons .reset");
+let timer = document.querySelector(".pomodoro .timer");
+
+let paused = true;
+let minCount = 24;
+let count = 59;
+
+timer.innerHTML = `${minCount + 1}:00`;
+
+let appendZero =(value) => {
+    value = value < 10 ? "0" + value : value;
+    return value; 
+}
+
+
+start.addEventListener("click", () =>{
+    pause.style.display = "block";
+    reset.style.display = "block";
+    start.style.display = "none";
+
+    if(paused) {
+        paused = false;
+        timer.innerHTML = `${appendZero(minCount)}:${appendZero(count)}`
+
+        setInterval(() =>{
+            count--;
+             timer.innerHTML = `${appendZero(minCount)}:${appendZero(count)}`
+        }, 1000);
+    }
+})
