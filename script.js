@@ -57,6 +57,11 @@ async function getquote(url) {
 
 getquote(api_url)
 
+let allMode = document.querySelector(".pomodoro .mode button");
+let focus = document.querySelector(".pomodoro .mode .focus");
+let short = document.querySelector(".pomodoro .mode .short");
+let long = document.querySelector(".pomodoro .mode .long");
+
 let start = document.querySelector(".pomodoro .buttons .start");
 let pause = document.querySelector(".pomodoro .buttons .pause");
 let reset = document.querySelector(".pomodoro .buttons .reset");
@@ -78,6 +83,7 @@ reset.addEventListener("click", () => {
     pauseTimer();
     count = 59;
     timer.innerHTML = `${minCount + 1}:00`;
+    clearInterval(setIn);
 })
 
 pause.addEventListener("click", (pauseTimer = () => {
