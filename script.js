@@ -62,6 +62,7 @@ let pause = document.querySelector(".pomodoro .buttons .pause");
 let reset = document.querySelector(".pomodoro .buttons .reset");
 let timer = document.querySelector(".pomodoro .timer");
 
+let setIn;
 let paused = true;
 let minCount = 24;
 let count = 59;
@@ -73,6 +74,20 @@ let appendZero =(value) => {
     return value; 
 }
 
+reset.addEventListener("click", () => {
+    pauseTimer();
+    count = 59;
+    timer.innerHTML = `${minCount + 1}:00`;
+})
+
+pause.addEventListener("click", (pauseTimer = () => {
+    paused = true;
+    clearInterval(setIn);
+    pause.style.display = "none";
+    reset.style.display = "none";
+    start.style.display = "block";
+
+}));
 
 start.addEventListener("click", () =>{
     pause.style.display = "block";
@@ -83,9 +98,18 @@ start.addEventListener("click", () =>{
         paused = false;
         timer.innerHTML = `${appendZero(minCount)}:${appendZero(count)}`
 
-        setInterval(() =>{
+       setIn = setInterval(() =>{
             count--;
              timer.innerHTML = `${appendZero(minCount)}:${appendZero(count)}`
+
+             if(count == 0) {
+                if(minCount != 0) {
+                    minCount--;
+                    count = 60;
+                }else {
+                    clearInterval(setIn);
+                }
+             }
         }, 1000);
     }
 })
