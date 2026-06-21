@@ -79,6 +79,30 @@ let appendZero =(value) => {
     return value; 
 }
 
+short.addEventListener("click", () => {
+    pauseTimer();
+    count = 59;
+    minCount = 4;
+    timer.innerHTML = `${minCount + 1}:00`;
+    clearInterval(setIn);
+})
+
+long.addEventListener("click", () => {
+    pauseTimer();
+    count = 59;
+    minCount = 14;
+    timer.innerHTML = `${minCount + 1}:00`;
+    clearInterval(setIn);
+})
+
+focus.addEventListener("click", () => {
+    pauseTimer();
+    count = 59;
+    minCount = 24;
+    timer.innerHTML = `${minCount + 1}:00`;
+    clearInterval(setIn);
+})
+
 reset.addEventListener("click", () => {
     pauseTimer();
     count = 59;
