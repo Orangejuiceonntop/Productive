@@ -1,8 +1,6 @@
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-image: url('https://i.pinimg.com/originals/4b/40/95/4b40954ebe9b03efd8f37714f98b17af.gif');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: #D1E5F4;
 }
 
 .todo {
