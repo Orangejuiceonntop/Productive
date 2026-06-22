@@ -1,15 +1,19 @@
 body {
     font-family: 'Noto Sans', sans-serif;
-    background-color: #D1E5F4;
+    background-image: url('https://i.pinimg.com/originals/4b/40/95/4b40954ebe9b03efd8f37714f98b17af.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .todo {
     width: 100%;
     max-width: 540px;
-    background: #ffffff;
+    background: #ffffffbe;
     margin: 38px auto 20px;
     padding: 40px 15px 65px;
     border-radius: 10px;
+    border: solid;
+    border-width: 3px;
 }
 .row {
     display: flex;
@@ -31,7 +35,7 @@ input {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: #f6dcbd;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
@@ -81,13 +85,15 @@ ul li span:hover {
 }
 
 .quote-box {
-    background: #ffffff;
+    background: #ffffffbe;
     width: 350px;
     position: absolute;
     top: 400px;
     left: 595px;
     padding: 40px;
     border-radius: 10px;
+    border: solid;
+    border-width: 3x;
     text-align: center;
 }
 .quote-box h2 {
@@ -132,11 +138,13 @@ ul li span:hover {
 .pomodoro {
     width: 350px;
     padding: 40px 40px 20px;
-    background: #ffffff;
+    background: #ffffffbe;
     position: absolute;
     top: 46px;
     left: 595px;
     border-radius: 10px;
+    border: solid;
+    border-width: 3px;
 }
 .pomodoro .mode {
     height: 60px;
@@ -148,7 +156,7 @@ ul li span:hover {
     all: unset;
     height: 40px;
     width: 90px;
-    background: #ff5945;
+    background: #f6dcbd;
     color: #ffffff;
     white-space: nowrap;
     display: flex;
@@ -175,7 +183,7 @@ ul li span:hover {
 }
 .pomodoro .buttons button {
     all: unset;
-    background: rgb(63, 139, 209);
+    background: #f6dcbd;
     height: 40px;
     width: 100px;
     color: #ffffff;
