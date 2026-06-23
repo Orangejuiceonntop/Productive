@@ -154,3 +154,7 @@ start.addEventListener("click", () =>{
 addmin.addEventListener("click", () => {
    timer.innerHTML = `${minCount ++}:00`
 })
+
+minusmin.addEventListener("click", () => {
+    timer.innerHTML = `${minCount --}:00`
+})
