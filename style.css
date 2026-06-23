@@ -1,6 +1,8 @@
 body {
     font-family: 'Noto Sans', sans-serif;
-    background: #D1E5F4;
+    background-image: url('https://i.pinimg.com/originals/85/05/05/8505051384604a66d6af0f6662e7dd44.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .todo {
@@ -33,7 +35,7 @@ input {
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #f6dcbd;
+    background: #819171;
     color: #ffffff;
     font-size: 16px;
     cursor: pointer;
@@ -154,7 +156,7 @@ ul li span:hover {
     all: unset;
     height: 40px;
     width: 90px;
-    background: #f6dcbd;
+    background: #9caf88;
     color: #ffffff;
     white-space: nowrap;
     display: flex;
@@ -181,7 +183,7 @@ ul li span:hover {
 }
 .pomodoro .buttons button {
     all: unset;
-    background: #f6dcbd;
+    background: #9caf88;
     height: 40px;
     width: 100px;
     color: #ffffff;
