@@ -62,6 +62,9 @@ let focus = document.querySelector(".pomodoro .mode .focus");
 let short = document.querySelector(".pomodoro .mode .short");
 let long = document.querySelector(".pomodoro .mode .long");
 
+let addmin = document.querySelector(".pomodoro .buttons .addmin")
+let minusmin = document.querySelector(".pomodoro .buttons .minusmin")
+
 let start = document.querySelector(".pomodoro .buttons .start");
 let pause = document.querySelector(".pomodoro .buttons .pause");
 let reset = document.querySelector(".pomodoro .buttons .reset");
@@ -116,6 +119,8 @@ pause.addEventListener("click", (pauseTimer = () => {
     pause.style.display = "none";
     reset.style.display = "none";
     start.style.display = "block";
+    addmin.style.display = "block";
+    minusmin.style.display = "block";
 
 }));
 
@@ -123,6 +128,8 @@ start.addEventListener("click", () =>{
     pause.style.display = "block";
     reset.style.display = "block";
     start.style.display = "none";
+    addmin.style.display = "none";
+    minusmin.style.display = "none";
 
     if(paused) {
         paused = false;
