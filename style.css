@@ -337,38 +337,31 @@ input {
     box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
     overflow-y: auto;
 }
-
 .music-list.show {
     bottom: 0;
     opacity: 1;
     pointer-events: auto;
 }
-
 .music-list .header .bar {
     display: flex;
     align-items: center;
     font-size: 18px;
     color: #2b2b2b;
 }
-
 .header .bar i {
     cursor: default;
 }
-
 .header .bar .span {
     margin-left: 5px;
 }
-
 .header #close {
     font-size: 25px;
     color: #2b2b2b;
 }
-
 .music-list ul {
     margin: 10px 0;
     max-height: 50px;
 }
-
 .music-list ul li {
     cursor: pointer;
     list-style: none;
@@ -377,19 +370,15 @@ input {
     color: #2b2b2b;
     border-bottom: 1px solid #9caf88;
 }
-
 .music-list ul li:last-child {
     border-bottom: 0px
 }
-
 .music-list ul li .bar span {
     font-size: 16px;
 }
-
 .music-list ul li .bar p {
     opacity: 0.9;
 }
-
 .music-list ul li .audio-duration {
     font-size: 16px;
 }
