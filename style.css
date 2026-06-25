@@ -211,7 +211,6 @@ input {
 .pomodoro .buttons .reset {
     margin-bottom: 25px;
 }
-
 .pomodoro .buttons .addmin {
     background: #819171;
     width: 35px;
@@ -220,7 +219,6 @@ input {
     margin-bottom: 25px;
     margin-right: 125px;
 }
-
 .pomodoro .buttons .minusmin {
     background: #819171;
     width: 40px;
@@ -230,8 +228,11 @@ input {
     margin-bottom: 25px;
 }
 
+
+
 .music-player {
     width: 380px;
+    overflow: hidden;
     position: relative;
     border-radius: 10px;
     padding: 25px 30px;
@@ -239,26 +240,21 @@ input {
     left: 980px;
     top: 46px;
 }
-
 .music-player i {
     cursor: pointer;
 }
-
 .music-bar, .progress .time-left, .controls, .music-list .header, .music-list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 .music-bar i {
     font-size: 30px;
     color: lightslategray;
 }
-
 .music-bar span {
     color: lightslategray;
 }
-
 .img-area {
     height: 256px;
     width: 100%;
@@ -267,27 +263,22 @@ input {
     border-radius: 5px;
     background: #819171;
 }
-
 .img-area img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 .details {
     text-align: center;
     margin: 10px 0;
 }
-
 .details .name {
     font-size: 20px
 }
-
 .details .artist {
     opacity: 0.9;
     font-size: 18px;
 }
-
 .progress {
     height: 6px;
     width: 100%;
@@ -295,7 +286,6 @@ input {
     border-radius: 50px;
     cursor: pointer;
 }
-
 .progress .progress-bar {
     height: inherit;
     width: 50%;
@@ -303,7 +293,6 @@ input {
     border-radius: inherit;
     background: #9caf88;
 }
-
 .progress-bar::before {
     content: "";
     position: absolute;
@@ -317,36 +306,42 @@ input {
     opacity: 0;
     transition: opacity 0.2s ease;
 }
-
 .progress:hover .progress-bar::before {
     opacity: 1;
 }
-
 .progress .time-left {
     margin-top: 2px;
 }
-
 .time-left span {
     font-size: 13px;
 }
-
 .controls {
     margin: 40px 0 5px 0;
 }
-
 .controls i {
     font-size: 28px;
 }
 
+
+
 .music-list {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -55%;
+    opacity: 0;
+    pointer-events: none;
     width: 100%;
     border-radius: 10px;
+    padding-top: 5px;
     background: #ffffff;
     box-shadow: 0px -5px 10px rgba(0,0,0,0.1);
     overflow-y: auto;
+}
+
+.music-list.show {
+    bottom: 0;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .music-list .header .bar {
