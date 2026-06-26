@@ -6,14 +6,14 @@ let allMusic = [
         src: "",
     },
     {
-        name: "Frank Ocean - Lost",
-        artist: "Frank Ocean",
+        name: "Miki Matsubara - Stay with me",
+        artist: "Miki Matsubara",
         img: "",
         src: "",
     },
     {
-        name: "Frank Ocean - Lost",
-        artist: "Frank Ocean",
+        name: "Taeko Ohnuki - 4:00 A.M.",
+        artist: "Taeko Ohnuki",
         img: "",
         src: "",
     },

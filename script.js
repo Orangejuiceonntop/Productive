@@ -62,8 +62,8 @@ let focus = document.querySelector(".pomodoro .mode .focus");
 let short = document.querySelector(".pomodoro .mode .short");
 let long = document.querySelector(".pomodoro .mode .long");
 
-let addmin = document.querySelector(".pomodoro .buttons .addmin")
-let minusmin = document.querySelector(".pomodoro .buttons .minusmin")
+let addmin = document.querySelector(".pomodoro .buttons .addmin");
+let minusmin = document.querySelector(".pomodoro .buttons .minusmin");
 
 let start = document.querySelector(".pomodoro .buttons .start");
 let pause = document.querySelector(".pomodoro .buttons .pause");
@@ -158,3 +158,25 @@ addmin.addEventListener("click", () => {
 minusmin.addEventListener("click", () => {
     timer.innerHTML = `${minCount --}:00`
 })
+
+
+
+const musicplayer = document.querySelector(".music-player")
+const musicImg = musicplayer.querySelector(".img-area img")
+const musicName = musicplayer.querySelector(".details .name")
+const musicArtist = musicplayer.querySelector(".details .artist");
+const mainAudio = musicplayer.querySelector("#main-audio")
+
+let musicIndex = 2;
+
+window.addEventListener("load", () => {
+    loadMusic(musicIndex);
+})
+
+function loadMusic(indexNumb) {
+    musicName.innerText = allMusic[indexNumb -1].name;
+    musicArtist.innerText = allMusic[indexNumb -1].artist;
+    musicImg.src = `images/${allMusic[indexNumb -1].img}.jpg`;
+    mainAudio.src = `songs/${allMusic[indexNumb -1].src}.mp3`;
+
+}
