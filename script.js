@@ -161,11 +161,12 @@ minusmin.addEventListener("click", () => {
 
 
 
-const musicplayer = document.querySelector(".music-player")
-const musicImg = musicplayer.querySelector(".img-area img")
-const musicName = musicplayer.querySelector(".details .name")
+const musicplayer = document.querySelector(".music-player");
+const musicImg = musicplayer.querySelector(".img-area img");
+const musicName = musicplayer.querySelector(".details .name");
 const musicArtist = musicplayer.querySelector(".details .artist");
-const mainAudio = musicplayer.querySelector("#main-audio")
+const mainAudio = musicplayer.querySelector("#main-audio");
+const play = musicplayer.querySelector(".play");
 
 let musicIndex = 2;
 
@@ -174,9 +175,27 @@ window.addEventListener("load", () => {
 })
 
 function loadMusic(indexNumb) {
-    musicName.innerText = allMusic[indexNumb -1].name;
-    musicArtist.innerText = allMusic[indexNumb -1].artist;
-    musicImg.src = `images/${allMusic[indexNumb -1].img}.jpg`;
-    mainAudio.src = `songs/${allMusic[indexNumb -1].src}.mp3`;
-
+    musicName.innerText = allMusic[indexNumb - 1].name;
+    musicArtist.innerText = allMusic[indexNumb - 1].artist;
+    musicImg.src = `images/${allMusic[indexNumb - 1].img}.jpg`;
+    mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
 }
+
+function playMusic() {
+    musicplayer.classList.add("stopped");
+    play.querySelector("i").innerText = "pause";
+    mainAudio.play();
+}
+
+function stopMusic() {
+    musicplayer.classList.remove("stopped");
+    play.querySelector("i").innerText = "play_arrow";
+    mainAudio.stopped();
+}
+
+play.addEventListener("click", () => {
+    const isMusicStopped = musicplayer.classList.contains("stopped");
+    isMusicStopped ? stopMusic() : playMusic();
+});
+
+
