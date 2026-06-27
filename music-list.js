@@ -3,13 +3,13 @@ let allMusic = [
         name: "Frank Ocean - Lost",
         artist: "Frank Ocean",
         img: "Channel Orange",
-        src: "",
+        src: "Lost",
     },
     {
         name: "Frank Ocean - Forrest Gump",
         artist: "Frank Ocean",
         img: "Channel Orange",
-        src: "",
+        src: "Forrest Gump",
     },
     {
         name: "Miki Matsubara - Stay with me",
