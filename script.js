@@ -161,6 +161,7 @@ minusmin.addEventListener("click", () => {
 
 const currentDate = document.querySelector(".current-date");
 const daysTag = document.querySelector(".days");
+const prevNext = document.querySelectorAll(".icons span");
 
 let date = new Date(),
 currYear = date.getFullYear(),
@@ -180,3 +181,10 @@ const renderCalendar = () => {
     daysTag.innerHTML = liTag; 
 }
 renderCalendar();
+
+prevNext.forEach(icon => {
+    icon.addEventListener("click", () => {
+        currMonth = icon.id === "prev" ? currMonth - 1 : currMonth + 1;
+        renderCalendar();
+    })
+});
