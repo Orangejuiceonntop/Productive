@@ -247,6 +247,8 @@ input {
 }
 header .current-date {
     font-size: 18px;
+    font-weight: 250px;
+    margin-left: 15px;
 }
 header .icons span {
     height: 38px;
@@ -274,7 +276,7 @@ header .icons span:last-child {
     cursor: pointer;
 }
 .calendar .weeks li {
-    font-weight: 500px;
+    font-weight: 150px;
 }
 .calendar ul li {
     position: relative;
@@ -286,7 +288,7 @@ header .icons span:last-child {
     height: 32px;
     width: 32px;
     top: 50%;
-    left: 15%;
+    left: 20%;
     z-index: -1;
     border-radius: 50%;
     transform: translate(-50%, -50%);
