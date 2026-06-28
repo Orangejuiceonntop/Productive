@@ -172,6 +172,7 @@ const months = ["January", "February", "March", "April", "May", "June", "July", 
 const renderCalendar = () => {
     let firstDayofMonth = new Date(currYear, currMonth, 1).getDay();
     let lastDateofMonth = new Date(currYear, currMonth + 1, 0).getDate();
+    let lastDayofMonth = new Date(currYear, currMonth, lastDateofMonth).getDay();
     let lastDateofLastMonth = new Date(currYear, currMonth, 0).getDate();
     let liTag = "";
 
@@ -181,6 +182,10 @@ const renderCalendar = () => {
 
     for (let i = 1; i <= lastDateofMonth; i++) {
        liTag += `<li>${i}</li>`;
+    }
+
+    for (let i = lastDayofMonth; i < 6; i++) {
+        liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`;
     }
 
     currentDate.innerText = `${months[currMonth]} ${currYear}`;
