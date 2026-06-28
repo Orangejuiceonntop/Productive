@@ -228,15 +228,18 @@ input {
     margin-bottom: 25px;
 }
 
-.wrapper {
-    width: 450px;
-    background: #ffffff;
+.calendar-container {
+    width: 385px;
+    background: #ffffffbe;
     border-radius: 10px;
     position: absolute;
-    top: 400px;
-    left: 850px;
+    top: 304px;
+    left: 1040px;
+    border: solid;
+    border-width: 4px;
+    border-color: #2b2b2b;
 }
-.wrapper header {
+.calendar-container header {
     display: flex;
     align-items: center;
     padding: 25px 30px 10px;
@@ -310,7 +313,7 @@ header .icons span:last-child {
     max-width: 305px;
     padding: 40px 40px 20px;
     height: 100%;
-    max-height: 150px;
+    max-height: 180px;
     background: #ffffffbe;
     outline: none;
     border-radius: 10px;
