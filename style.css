@@ -254,6 +254,7 @@ header .icons span {
     height: 38px;
     width: 38px;
     color: #878787;
+    user-select: none;
     cursor: pointer;
 }
 header .icons span:last-child {
