@@ -181,7 +181,8 @@ const renderCalendar = () => {
     }
 
     for (let i = 1; i <= lastDateofMonth; i++) {
-       liTag += `<li>${i}</li>`;
+        let isToday = i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear() ? "active" : "";
+        liTag += `<li class="${isToday}">${i}</li>`;
     }
 
     for (let i = lastDayofMonth; i < 6; i++) {
