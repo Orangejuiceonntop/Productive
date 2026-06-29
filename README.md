@@ -21,6 +21,7 @@ A website that helps you stay on track your goals!
 
 ## Credits
 
-GreatStack on Youtube
-Doxa Dev on Youtube
-CodingNepal on Youtube
+- GreatStack on Youtube
+- Doxa Dev on Youtube
+- CodingNepal on Youtube
+- Alberta Cinemagraph Collection
