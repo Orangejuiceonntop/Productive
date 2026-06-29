@@ -8,7 +8,7 @@ https://orangejuiceonntop.github.io/Productive/
 
 ## Features
 
-- A To-Do List (checking items doesn't work currently)
+- A To-Do List (You can't check tasks)
     - Create new tasks by clicking the "Add" buttons or by pressing "Enter" on your keyboard
     - Tasks are saved locally so when you refresh or leave the site, it stays
 
